@@ -1,1 +1,1 @@
-{"runners":{"configs":{"system:/python/web/python27_gae199":{"variables":{},"ram":0,"options":{}}},"default":"system:/python/web/python27_gae199"},"type":"python","attributes":{}}
+{"runners":{"configs":{"system:/python/web/python27_gae199":{"variables":{},"ram":0,"options":{}}},"default":"system:/python/web/python27_gae199"},"description":"This is the primary dev site for Zim's website","type":"python","attributes":{"language":["python"]}}
