@@ -1,1 +1,1 @@
-{"runners":{"configs":{"system:/python/web/python27_gae199":{"variables":{},"ram":0,"options":{}}},"default":"system:/python/web/python27_gae199"},"description":"This is the primary dev site for Zim's website","type":"python","attributes":{"language":["python"]}}
+{"runners":{"configs":{"system:/python/web/python27_gae1914":{"variables":{},"ram":0,"options":{}}},"default":"system:/python/web/python27_gae1914"},"type":"GAEPython","attributes":{},"description":"This is the primary dev site for Zim's website"}

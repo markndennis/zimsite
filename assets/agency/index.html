@@ -30,6 +30,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./js/turn.min.js"></script>
 
 </head>
 
@@ -58,10 +62,10 @@
                         <a class="page-scroll" href="#characters">The Characters</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#world">The Worlds</a>
+                        <a class="page-scroll" href="#world">The World</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#story">The Story</a>
+                        <a class="page-scroll" href="#flipstory">The Story</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">The Team</a>
@@ -82,7 +86,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Champions of Hara!</div>
                 <div class="intro-heading">Coming Soon ...</div>
-                <a href="#story" class="page-scroll btn btn-xl">Tell Me More</a>
+                <a href="#flipstory" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
@@ -192,8 +196,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Worlds</h2>
-                    <h3 class="section-subheading text-muted">colorful and imaginative worlds</h3>
+                    <h2 class="section-heading">The World</h2>
+                    <h3 class="section-subheading text-muted">Eons ago, Hara was whole; a single landmass floating in the vast skies that exist below The Tree of Life, and home to an abundance of Shui-infused flora and fauna. It was a paradise in form and function, and the primordial beings that inhabited the plane lived in harmony with Shui. 
+
+However, over time, the forces of Shui became unstable, and began to fracture the peaceful world into smaller planes, each taking on distinct characteristics. Throughout all the change, Hara’s Two Suns -- known colloquially as “Dawn” and “Dusk” --  have remained, constantly chasing one another in the sky. </h3>
                 </div>
             </div>
             <div class="row">
@@ -208,7 +214,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Arechi</h4>
-                        <p class="text-muted">Arechi</p>
+                        <p class="text-muted">An unforgiving desert</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -222,7 +228,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Baiyu</h4>
-                        <p class="text-muted">Baiyu</p>
+                        <p class="text-muted">The musical hub of Hara</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -236,7 +242,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>The Drear</h4>
-                        <p class="text-muted">The Drear</p>
+                        <p class="text-muted">twisted and sinister peaks</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -250,7 +256,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Lunaridge</h4>
-                        <p class="text-muted">Lunaridge</p>
+                        <p class="text-muted">land of the Monshroom Forests</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -264,7 +270,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Oppenheim</h4>
-                        <p class="text-muted">Oppenheim</p>
+                        <p class="text-muted">The Painted City</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 portfolio-item">
@@ -278,7 +284,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Oakenmoor</h4>
-                        <p class="text-muted">Oakenmoor</p>
+                        <p class="text-muted">Lush and bountiful</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3"></div>
@@ -293,7 +299,7 @@
                     </a>
                     <div class="portfolio-caption text-center">
                         <h4>Dojo</h4>
-                        <p class="text-muted">Dojo</p>
+                        <p class="text-muted">The idyllic sanctuary</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3"></div>
@@ -302,8 +308,35 @@
             </div>
         </div>
     </section>
- 
     <!-- About Section -->
+    <section id="flipstory">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading">The Story</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div id="flipbook">
+						<div class="hard"> Turn.js </div>
+						<div class="hard"></div>
+						<div>  <img src="img/book/Champions_of_Hara_001.png"> </div>
+						<div>  <img src="img/book/Champions_of_Hara_002.png"> </div>
+						<div>  <img src="img/book/Champions_of_Hara_003.png"> </div>
+						<div class="hard"></div>
+						<div class="hard"></div>
+					</div>
+					<script type="text/javascript">
+						$("#flipbook").turn({
+							width: 1000,
+							height: 800,
+							//autoCenter: true
+						});
+					</script>
+                </div>
+            </div>
+        </div>
+    
+ 
+    <!-- About Section 
     <section id="story">
         <div class="container">
             <div class="row">
@@ -383,7 +416,7 @@
             </div>
         </div>
     </section>
-
+-->
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
@@ -713,10 +746,11 @@
                     <div class="col-lg-12">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Arechi</h2>
-                            <p class="item-intro text-muted">the first human to ever come to Hara</p>
+                            <h2>Arechi Wastes</h2>
+                            <p class="item-intro text-muted">An unforgiving desert</p>
                             <img class="img-responsive img-centered" src="img/worlds/Arechi_board_sm.jpg" alt="">
-                            <p>Born in 19th century London, the young genius Thomas Evening spent his early years on Earth as an outcast.  At the age of 20, one of Thomas’s failed experiments destroys a city block, resulting in his imprisonment as a “danger to society”; however, isolation in prison allows Thomas to focus on his work, tracing calculations in the dust across his cell. Recognizing his creative potential, The Kensei chose Thomas as a competitor in the 734th Conflux - making him the first human to ever come to Hara. Proving himself to be a Shui-wielding prodigy, Thomas finds success as an underdog in his first year -- earning himself a host of both friends and enemies. </p>
+                            <p>Largely uninhabited, the Arechi Wastes are an unforgiving desert ravaged by brutal lightning storms and “stampedes” of barbed-metal tumbleweeds. Accustomed to a life of isolation, Thomas Evening chose the dangerous terrain of the Arechi Wastes as the site for constructing his Tower - the product of his victory in the 734th Conflux. 
+</p>
                             <p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
@@ -741,9 +775,10 @@
                          <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Baiyu</h2>
-                            <p class="item-intro text-muted">a hero not a victim</p>
+                            <p class="item-intro text-muted">The musical hub of Hara</p>
                             <img class="img-responsive img-centered" src="img/worlds/baiyu_board_sm.jpg" alt="">
-                            <p>Kaoru hails from a war-torn and barbaric world that is governed by a ruthless matriarchy. All of the men in Kaoru’s tribe are hunters, each receiving their own bear companion after completing the trial of manhood. Kaoru, however, was born the scrawny runt of the litter, and suffered the loss of his left hand in a childhood accident. Handicapped and deemed weak, Kaoru was not even allowed to participate in the trial of manhood, resulting in constant bullying from his fellow tribesmen. Once pulled into Hara, Kaoru discovers he is able to use his affinity for Shui to construct his own bear companion, Kuma, and a powerful new hand made of stone. The young competitor seeks to win the Conflux to prove to himself that he is a hero - not a victim.
+                            <p>After breaking off from The Great Forest, The Baiyu became the musical hub of Hara; giant speaker systems grow in the trees, and the plants that sprout from the swamp all produce different tones when struck. The Yume that remained in the muck have grown to see Leaf not only as their protector and champion, but as the producer for the rag-tag band of musically inclined monsters. 
+
 							</p>
                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
@@ -768,11 +803,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Drear</h2>
-                            <p class="item-intro text-muted">wild and rambunctious</p>
+                            <p class="item-intro text-muted">twisted and sinister peaks</p>
                             <img class="img-responsive img-centered" src="img/worlds/drear_board_sm.jpg" alt="">
-                            <p>Wild and rambunctious, Sof is chosen as a Champion for her sure-footedness and exuberance for adventure. Due to the violent nature in which Sof’s abilities manifest on Hara, her participation in the Conflux is met with opposition; frequently, several disgruntled Champions gang up to eliminate her in the early rounds -- although they never get away without a few bruises. During her time on Hara, Sof has brought countless complaints to the Kensei, pleading with them to bring Bamboo, her dog-dragon companion, to live on her new home. Continually refused, Sof hopes to win the Conflux in order to gain the power needed to be reunited with her best friend.  
+                            <p>Few travelers venture into The Drear, and only the most staunch competitors in the Conflux have crossed into the shadowy plane in search of Rifts. The twisted and sinister peaks of The Drear are home to the Oneroi -- a shadowy organization of ninja-scientists who have dedicated their existence to the study and application of nightmares. 
 							</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Character</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
                     </div>
                 </div>
@@ -795,10 +830,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Lunaridge</h2>
-                            <p class="item-intro text-muted">Leaf is a tree of few words</p>
+                            <p class="item-intro text-muted">land of the Monshroom Forests</p>
                             <img class="img-responsive img-centered" src="img/worlds/lunaridge_board_sm.jpg" alt="">
-                            <p>Unlike his fellow Champions, Leaf was not pulled into Hara from another world; rather, he was the product of a massive green rift, so large and violent that it split the once Great Forest into the separate islands Oakenmoor and The Baiyu. Because of the destructive nature of his birth, Leaf feels a heavy sense of guilt and responsibility, desperately trying to win the Conflux in order to gain the strength needed to fuse the two planes back together.  These days, Leaf is a tree of few words, preferring his beats over conversation. When he’s not listening to the natural rhythms of the forest, Leaf composes his own tunes in his bioluminescent beat-laboratory at the heart of the Baiyu. </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Character</button>
+                            <p>The mountainous Lunaridge is home to a perplexing group of “mystics” -- The Lunatics. The Lunatic community has not chosen a Champion from their midst for hundreds of Confluxes, with their entire society nearly come to a halt over the question: Does the moon control the tides, or do the tides control the moon? Despite the Kensei’s attempts to remind the Lunatics that Hara has neither an ocean nor a moon, The Lunatics would rather sit and debate amongst the native “Monshroom Forests” than take any action. That is, until the prophecy of the Lunatic Elder foretells of an impending darkness that descends upon Hara.  
+ </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
                     </div>
                 </div>
@@ -821,11 +857,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Oppenheim</h2>
-                            <p class="item-intro text-muted">the being with the worst nightmares in the entire universe</p>
+                            <p class="item-intro text-muted">The Painted City</p>
                             <img class="img-responsive img-centered" src="img/worlds/Oppenheim_board_sm.jpg" alt="">
-                            <p>When searching for new competitors, the Kensei do their best to avoid worlds filled with darkness and evil -- those types of environments typically don’t make for great Champions. Unfortunately, The Oneroi, a group of ninja-scientists dedicated to the study of nightmares, found their way into Hara on the merits of their extreme curiosity. Since their arrival, The Oneroi have managed to subtly tamper with the Kensei’s world-map, causing the Kensei to inadvertently search for the being with the worst nightmares in the entire universe -- Persephone. From the moment she was pulled into Hara, The Oneroi have tried to capture Persephone in hopes of studying her brain; however, while fleeing the organization’s shadowy agents, Persephone stumbles upon Thomas Evening’s newly constructed tower. After being offered protection, friendship, and food by the young scientist, Persephone decides to stay.
+                            <p>Known as “The Painted City,” Oppenheim is home to the mischievous and fun-loving Goonfolk -- a diminutive race of grey-skinned party animals. The Goonfolks’ lack of pigment has lead to a culture idolization of all things colorful, so naturally upon meeting Orc he was a unanimous vote for their new king. Both the color and commerce of the illustrious city is powered by an arcane battery - a reactor that requires periodic deposits of Shui in order to be sustained. 
 							</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Character</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
                     </div>
                 </div>
@@ -848,10 +884,10 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Oakenmoor</h2>
-                            <p class="item-intro text-muted">a talented painter and chef</p>
+                            <p class="item-intro text-muted">Lush and bountiful</p>
                             <img class="img-responsive img-centered" src="img/worlds/Oakenmoor_board_sm.jpg" alt="">
-                            <p>King of the Painted City, Oppenheim, Orc is a man of high ideals, believing that the greatest forces in the universe emanate from the belly. A talented painter and chef, Orc insists that wielding Shui is an artist’s work, and that the only thing an artist requires is a full stomach. After witnessing Thomas’s unexpected victory, Orc takes a liking to the human and the two become fast friends and training partners. As king of Oppenheim, Orc feels responsible for using any energy he gains from competing in the Conflux to replenish the city’s arcane battery - the source of it’s inhabitants’ colorful magic.  </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Character</button>
+                            <p>The lush and bountiful Oakenmoor was once connected to the Baiyu as part of The Great Forest, but was severed by the same massive rift that created Leaf. Most of the Yume, a population of shape-shifting forest critters, remained in Oakenmoor when the schism took place. The surviving Yume have adapted to the lack of space by building a network of treetop villages throughout the jungle. </p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
                     </div>
                 </div>
@@ -874,10 +910,11 @@
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Dojo</h2>
-                            <p class="item-intro text-muted">a talented painter and chef</p>
+                            <p class="item-intro text-muted">The idyllic sanctuary</p>
                             <img class="img-responsive img-centered" src="img/worlds/dojo_board_sm.jpg" alt="">
-                            <p>King of the Painted City, Oppenheim, Orc is a man of high ideals, believing that the greatest forces in the universe emanate from the belly. A talented painter and chef, Orc insists that wielding Shui is an artist’s work, and that the only thing an artist requires is a full stomach. After witnessing Thomas’s unexpected victory, Orc takes a liking to the human and the two become fast friends and training partners. As king of Oppenheim, Orc feels responsible for using any energy he gains from competing in the Conflux to replenish the city’s arcane battery - the source of it’s inhabitants’ colorful magic.  </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Character</button>
+                            <p>The idyllic sanctuary in the center of Hara is home to the Kensei - Hara’s chosen guardians. While there are two known Kensei in existence, only one is ever seen at a time. It is rumored that when Hara’s Two Suns,”Dawn” & “Dusk,” eclipse one another, the Kensei switch places; one is alive, while the other remains dormant as a sword until the next solar cycle is complete. At the Dojo, the active Kensei orchestrates the Conflux, heals wounded Champions, and provides a space for newcomers to train in the utilization of Shui. 
+</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close World</button>
                         </div>
                     </div>
                 </div>
@@ -885,7 +922,6 @@
         </div>
     </div>
       
-    
     
 
     <!-- jQuery Version 1.11.0 -->
