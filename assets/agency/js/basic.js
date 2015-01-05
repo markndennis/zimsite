@@ -52,7 +52,7 @@ function loadApp() {
 			
 			// Auto center this flipbook
 
-			autoCenter: true
+			//autoCenter: true
      
          
 	});
